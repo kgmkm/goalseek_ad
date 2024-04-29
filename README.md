@@ -53,7 +53,7 @@ init_editorで出力された設定情報として読み込ませることで、
 1行目は呪文詠唱
 
 ## goalseek_adult_editor.yaml
-init_editorの1行目に存在するminifyed jsonの中身（minifyedしているのはトークン節約のため）。ここで編集者として必要なスキルを鍛えている。何か編集者としての挙動が変だったり、調整したい場合は、このファイルから編集し、yamlからjsonに変換すると良い。
+init_editorの1行目に存在するminifyed jsonの中身（minifiedしているのはトークン節約のため）。ここで編集者として必要なスキルを鍛えている。何か編集者としての挙動が変だったり、調整したい場合は、このファイルから編集し、yamlからjsonに変換すると良い。
 
 ## goalseek_adult_writer.yaml
 上記と近いもの。ここで小説家として必要なスキルを鍛えている
