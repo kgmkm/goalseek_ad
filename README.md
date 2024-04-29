@@ -1,9 +1,12 @@
-# goalseek_ad
+# 🔞goalseek_ad
 nsfw小説用ゴールシークプロンプト
 EasyNovelAssistantで打率の高い小説企画ガチャと小説本文ガチャをするためのもの
 https://github.com/Zuntan03/EasyNovelAssistant
 
 editorとwriterと２つの役割に分割してる。つまり編プロと作家が分業して制作する状況をエミュレーション
+
+# ⚠notice
+このプロンプトはまだdev版で、破壊的変更の可能性が存在します。アップデートはこのページを逐次確認してください
 
 # checked environment
 - EasyNovelAssistant
@@ -11,7 +14,7 @@ editorとwriterと２つの役割に分割してる。つまり編プロと作�
 - 生成文の長さ 1024-8192 (高すぎると荒れる)
 - 温度感 0.5-0.6
 
-# how to use
+# 🚮how to use
 ## editor編（小説企画からプロッティングまで）
 - EasyNovelAssistantの左側に[init_editor.txt](https://github.com/kgmkm/goalseek_ad/blob/main/init_editor.txt)の内容をコピペする
 - 一緒に作りたい小説は「xxx」です！ の部分を編集し、作りたい小説の情報を説明する
@@ -42,7 +45,7 @@ editorとwriterと２つの役割に分割してる。つまり編プロと作�
 - 本文は章まるごとだと、ちょっと長そう。AI出力も荒れる印象を受けた
 - 生成過程でシナリオを調整したい場合（絶対あるはず）、「小説設定情報」のアウトラインとプロット、「小説本文」の内容を手作業で修正すること
 
-# prompt detail
+# ㊙prompt detail
 ## init_editor.txt
 LLMが小説の編集者として企画から設定・プロット作成まで作成してくれる
 それらは設定情報として箇条書きリストとして出力される
