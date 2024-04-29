@@ -13,7 +13,7 @@ editorとwriterと２つの役割に分割してる。つまり編プロと作�
 
 # how to use
 ## editor編（小説企画からプロッティングまで）
-- EasyNovelAssistantの左側にinit_editor.txtの内容をコピペする
+- EasyNovelAssistantの左側に[init_editor.txt](https://github.com/kgmkm/goalseek_ad/blob/main/init_editor.txt)の内容をコピペする
 - 一緒に作りたい小説は「xxx」です！ の部分を編集し、作りたい小説の情報を説明する
   + 小説を丸ごと説明するタイトルなどが推奨
   + 1行にまとまる内容がオススメ
@@ -24,7 +24,7 @@ editorとwriterと２つの役割に分割してる。つまり編プロと作�
   + 「一番セクシーなシーンを表紙にするから画像生成AI用の英語プロンプトを出力して」と送信しよう
 
 ## writer編（editorが生成した設定とプロットで執筆）
-- EasyNovelAssistantの左側にinit_writer.txtの内容をコピペする
+- EasyNovelAssistantの左側に[init_writer.txt](https://github.com/kgmkm/goalseek_ad/blob/main/init_writer.txt)の内容をコピペする
 - 「小説設定情報」の下に、箇条書きリストをペースト
   + 【重要】箇条書きリストの抜けとフォーマット崩れを手直しする（特に必須なのは小説タイトル・ジャンル・ヒロインのデザイン・小説のアウトライン・小説のプロット）
 - 「執筆する章」の「章数」と「文字数」を適宜修正する
@@ -56,4 +56,4 @@ init_editorの1行目に存在するminifyed jsonの中身（minifyedしてい�
 上記と近いもの。ここで小説家として必要なスキルを鍛えている
 
 ## adult_control_function.yaml
-EasyNovelAssistantのUIはAIと対話して生成するものではないため、途中の指示入れが困難。だが中のkobold.cppではチャットモードで小説作成ができる。チャットモードの場合、この指示リストがあることで、無視されづらい状況が作れる
+【修正中ファイル】EasyNovelAssistantのUIはAIと対話して生成するものではないため、途中の指示入れが困難。だが中のkobold.cppではチャットモードで小説作成ができる。チャットモードの場合、この指示リストがあることで、無視されづらい状況が作れる
