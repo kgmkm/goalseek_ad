@@ -5,7 +5,9 @@ nsfw小説用ゴールシークプロンプト
 editor・writerと２つの役割が存在。つまり編プロと作家が分業して制作する状況をエミュレーション
 
 # ⚠notice
-このプロンプトはまだdev版で、破壊的変更の可能性が存在します。アップデートはこのページを逐次確認してください
+- このプロンプトはまだdev版で、破壊的変更の可能性が存在します。アップデートはこのページを逐次確認してください
+- このコンテンツは[Github利用規約](https://docs.github.com/ja/site-policy/acceptable-use-policies/github-sexually-obscene-content)を参考に、芸術的側面を持つテキストベースコンテンツとして投稿しました
+- 若年層の方は、お住まいの地域国家のコンテンツレーティングを遵守し、このコンテンツの使用可否をご判断ください
 
 # 🏕checked environment
 - EasyNovelAssistant
