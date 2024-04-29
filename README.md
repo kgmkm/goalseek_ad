@@ -64,3 +64,6 @@ init_editorの1行目に存在するminified jsonの中身（minifiedしてい�
 
 ## adult_control_function.yaml
 【修正中ファイル】EasyNovelAssistantのUIはAIと対話して生成するものではないため、途中の指示入れが困難。だが中のkobold.cppではチャットモードで小説作成ができる。チャットモードの場合、この指示リストがあることで、無視されづらい状況が作れる
+
+# 📕example of a novel
+[pixivにて投稿予定](https://www.pixiv.net/users/4305285/novels)
