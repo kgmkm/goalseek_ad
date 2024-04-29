@@ -8,7 +8,7 @@ editorとwriterと２つの役割に分割してる。つまり編プロと作�
 # ⚠notice
 このプロンプトはまだdev版で、破壊的変更の可能性が存在します。アップデートはこのページを逐次確認してください
 
-# checked environment
+# 🏕checked environment
 - EasyNovelAssistant
 - LightChatAssistant-TypeB-2x7B_iq4xs_imatrix
 - 生成文の長さ 1024-8192 (高すぎると荒れる)
