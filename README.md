@@ -54,7 +54,7 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 - 生成過程でシナリオを調整したい場合（絶対あるはず）、「小説設定情報」のアウトラインとプロット、「小説本文」の内容を手作業で修正すること
 
 ## imager編（editorが生成した設定で画像生成AI用プロンプトを作る）
-- EasyNovelAssistantの左側に[init_writer.txt](https://github.com/kgmkm/goalseek_ad/blob/main/init_imager.txt)の内容をコピペする
+- EasyNovelAssistantの左側に[init_imager.txt](https://github.com/kgmkm/goalseek_ad/blob/main/init_imager.txt)の内容をコピペする
 - 行頭にキャラクター設定を箇条書きリストから抜き出して貼り付ける（例ではシャイニーピーチを参考にしつつ案を削除しよう
 - EasyNovelAssistantで生成開始し、しばらく放置、その後outputを確認してチェリーピック
 - 最もあってそうな内容の「プロンプト」をコピーしてpositive prompt欄に入れよう
