@@ -14,6 +14,7 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 - gguf models
   + LightChatAssistant-TypeB-2x7B_iq4xs_imatrix (汎用:このデフォルトモデルだけで運用可能)
   + sniffyOther-7B-Novel-writing (writer用)
+  + Ninja-v1-NSFW_Q_8_0 (writer用)
   + japanese-starling-chatv-7b.Q4_K_M (imager用)
 - GPU layer L33
 - 生成文の長さ 1024-4096 (高すぎると荒れる)
@@ -51,6 +52,12 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 - 第二章以降から書き出す場合は第一章後半をまとめてペーストしておくと、文体維持を考慮して生成してくれやすくなる
 - コピペする小説本文は章まるごとだと、ちょっと長そう。AI出力も荒れる印象があるため、長い場合は小説後半からペーストして次章を書かせる
 - 生成過程でシナリオを調整したい場合（絶対あるはず）、「小説設定情報」のアウトラインとプロット、「小説本文」の内容を手作業で修正すること
+
+## imager編（editorが生成した設定で画像生成AI用プロンプトを作る）
+- EasyNovelAssistantの左側に[init_writer.txt](https://github.com/kgmkm/goalseek_ad/blob/main/init_imager.txt)の内容をコピペする
+- 行頭にキャラクター設定を箇条書きリストから抜き出して貼り付ける（例ではシャイニーピーチを参考にしつつ案を削除しよう
+- EasyNovelAssistantで生成開始し、しばらく放置、その後outputを確認してチェリーピック
+- 最もあってそうな内容の「プロンプト」をコピーしてpositive prompt欄に入れよう
 
 # 🉐prompt detail
 ## init_editor.txt
