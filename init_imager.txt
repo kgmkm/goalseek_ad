@@ -1,6 +1,6 @@
 ヒロインの詳細設定：
 - 名前：魔法少女シャイニーピーチ
-- 外見年齢：16歳の美少女
+- 外見年齢：18歳の美少女
 - 性格：おてんばで元気な性格、好奇心旺盛
 - 一人称：私
 - 行動原理：世界平和を守るために戦う、使命感・情熱に溢れる
@@ -13,7 +13,7 @@
 I would like to use image generation AI (stable diffusion) to create a cover illustration for a novel featuring the above characters, so please understand the design settings, think in English for the prompts for image generation and output them in English.
 - Japanese cannot be used as a prompt, so please use English.
 - Describe it on a single line without using line breaks. Each line should be no longer than 300 tokens.
-- Proper nouns such as character names should be excluded from the prompt. However, it is creative to prompt the impression you get from the character.
+- Proper nouns such as character names should be excluded from the prompt
 
 Please continue from the following prompt sentence:
 
