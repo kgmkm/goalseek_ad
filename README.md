@@ -12,7 +12,7 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 # 🏕checked environment
 - EasyNovelAssistant
 - gguf models
-  + LightChatAssistant-TypeB-2x7B_iq4xs_imatrix (汎用:このデフォルトモデルだけで運用可能)
+  + LightChatAssistant-TypeB-2x7B_iq4xs_imatrix (汎用)
   + sniffyOther-7B-Novel-writing (writer用)
   + Ninja-v1-NSFW_Q_8_0 (writer用)
   + japanese-starling-chatv-7b.Q4_K_M (imager用)
@@ -28,6 +28,9 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
   + 小説を丸ごと説明するタイトルなどが推奨
 - EasyNovelAssistantで生成開始し、しばらく放置、その後outputを確認してチェリーピック
 - 最も良かった内容の「箇条書きリスト」をコピーする
+
+### recommended config
+- LightChatAssistant-TypeB-2x7B_iq4xs_imatrix L33 4096 0.6
 
 ### editors memo
 - 作りたい小説の情報 1行にまとまる内容がオススメ。とはいえココでヒロイン名と相手役名を策定するとブレが抑えられてオススメ
@@ -46,6 +49,10 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
   + 手作業で小説本文を校正して、プロンプトに「小説本文」をペーストし、箇条書きリストの「プロット」を増補して、次章を書かせる
   + 終章まで繰り返す。お疲れ様！
 
+### recommended config
+- LightChatAssistant-TypeB-2x7B_iq4xs_imatrix L33 2048-4096 0.6
+- sniffyOther-7B-Novel-writing L33 1024-2048 0.5 (優秀だが、koboldcpp上からチャットモードで書かせた方が良いかも？ 要検証)
+
 ### writers memo
 - 文字数はぶっちゃけ目安にならんけど、5000文字以上だと「シーンをあなたの想像力を働かせて増補」が効いてくる
 - 序章の書き出しはとりあえず場面説明などがオススメ。"昼下がりの保健室に、女性が一人。"など
@@ -57,7 +64,14 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 - EasyNovelAssistantの左側に[init_imager.txt](https://github.com/kgmkm/goalseek_ad/blob/main/init_imager.txt)の内容をコピペする
 - 行頭にキャラクター設定を箇条書きリストから抜き出して貼り付ける（例ではシャイニーピーチを参考にしつつ案を削除しよう
 - EasyNovelAssistantで生成開始し、しばらく放置、その後outputを確認してチェリーピック
-- 最もあってそうな内容の「プロンプト」をコピーしてpositive prompt欄に入れよう
+- 最も良さそうな内容のpromptをコピーしてpositive prompt欄に入れよう
+
+### recommended config
+- japanese-starling-chatv-7b.Q4_K_M (stable diffusionらしいprompt構文を理解しているのがコイツくらいしか無かった、llama辺りもいけそう)
+
+### imagers memo
+- 正直俺が思いもつかなかったような画質向上プロンプトが混ざることがあり、驚くような画像が出ることがある。stable diffusionユーザは是非使ってほしい
+- 時々プロンプト内にrealisticが交じるので、イラスト系出力したい人は気をつけること(とりわけpony系SDXL使ってると効きやすい)
 
 # 🉐prompt detail
 ## init_editor.txt
