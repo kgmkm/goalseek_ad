@@ -11,8 +11,10 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 
 # 🏕checked environment
 - EasyNovelAssistant
-- LightChatAssistant-TypeB-2x7B_iq4xs_imatrix
-  - sniffyOther-7B-Novel-writing はeditorには向かないがwriterで良好な結果
+- gguf models
+  + LightChatAssistant-TypeB-2x7B_iq4xs_imatrix (汎用:このデフォルトモデルだけで運用可能)
+  + sniffyOther-7B-Novel-writing (writer用)
+  + japanese-starling-chatv-7b.Q4_K_M (imager用)
 - GPU layer L33
 - 生成文の長さ 1024-4096 (高すぎると荒れる)
   + sniffyOtherは1024-2048が良さそう
@@ -28,7 +30,6 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 
 ### editors memo
 - 作りたい小説の情報 1行にまとまる内容がオススメ。とはいえココでヒロイン名と相手役名を策定するとブレが抑えられてオススメ
--  ~~「画像生成AIを使って表紙を作成する」旨を通達済みなので、必要なら「一番セクシーなシーンを表紙にするから画像生成AI用のプロンプトを英語で出力して」と送信しよう~~ 画像生成AIのプロンプト生成はより良好なモデルとプロンプトを発見したので追加予定
 
 ## writer編（editorが生成した設定とプロットで執筆）
 - EasyNovelAssistantの左側に[init_writer.txt](https://github.com/kgmkm/goalseek_ad/blob/main/init_writer.txt)の内容をコピペする
