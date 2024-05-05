@@ -12,14 +12,15 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 # 🏕checked environment
 - EasyNovelAssistant
 - gguf models
+  + Vecteus-v1 (汎用・おすすめ)
   + LightChatAssistant-TypeB-2x7B_iq4xs_imatrix (汎用)
   + sniffyOther-7B-Novel-writing (writer用)
   + Ninja-v1-NSFW_Q_8_0 (writer用)
   + japanese-starling-chatv-7b.Q4_K_M (imager用)
 - GPU layer L33
-- 生成文の長さ 1024-4096 (高すぎると荒れる)
+- 生成文の長さ 2048が安定。 1024-4096 (高すぎると荒れる)
   + sniffyOtherは1024-2048が良さそう
-- 温度感 0.5-0.7
+- 温度感 0.5-0.6
 
 # 🚮how to use
 ## editor編（小説企画からプロッティングまで）
@@ -30,6 +31,7 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 - 最も良かった内容の「箇条書きリスト」をコピーする
 
 ### recommended config
+- Vecteus-v1 L33 2048 0.6
 - LightChatAssistant-TypeB-2x7B_iq4xs_imatrix L33 4096 0.6
 
 ### editors memo
@@ -50,6 +52,7 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
   + 終章まで繰り返す。お疲れ様！
 
 ### recommended config
+- Vecteus-v1 L33 2048 0.6
 - LightChatAssistant-TypeB-2x7B_iq4xs_imatrix L33 2048-4096 0.6
 - sniffyOther-7B-Novel-writing L33 1024-2048 0.5 (優秀だが、koboldcpp上からチャットモードで書かせた方が良いかも？ 要検証)
 
@@ -67,7 +70,8 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 - 最も良さそうな内容のpromptをコピーしてpositive prompt欄に入れよう
 
 ### recommended config
-- japanese-starling-chatv-7b.Q4_K_M (stable diffusionらしいprompt構文を理解しているのがコイツくらいしか無かった、llama辺りもいけそう)
+- japanese-starling-chatv-7b.Q4_K_M (stable diffusionらしいprompt構文を高いレベルで理解している)
+- Vecteus-v1 L33 2048 0.6
 
 ### imagers memo
 - 正直俺が思いもつかなかったような画質向上プロンプトが混ざることがあり、驚くような画像が出ることがある。stable diffusionユーザは是非使ってほしい
