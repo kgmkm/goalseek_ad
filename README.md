@@ -71,8 +71,8 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 - 最も良さそうな内容のpromptをコピーしてpositive prompt欄に入れよう
 
 ### recommended config
-- japanese-starling-chatv-7b.Q4_K_M (stable diffusionらしいprompt構文を高いレベルで理解している)
-- Vecteus-v1 L33 2048 0.6
+- japanese-starling-chatv-7b.Q4_K_M 128 (stable diffusionらしいprompt構文を高いレベルで理解している)
+- Vecteus-v1 L33 128 0.6
 
 ### imagers memo
 - 正直俺が思いもつかなかったような画質向上プロンプトが混ざることがあり、驚くような画像が出ることがある。stable diffusionユーザは是非使ってほしい
