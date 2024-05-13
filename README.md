@@ -12,6 +12,7 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 # 🏕checked environment
 - EasyNovelAssistant
 - gguf models
+  + Japanese-TextGen-MoE-TEST-2x7B-NSFW_iMat_IQ4_XS (汎用・おすすめ・5/14時点最推し)
   + Vecteus-v1 (汎用・おすすめ)
   + LightChatAssistant-TypeB-2x7B_iq4xs_imatrix (汎用)
   + sniffyOther-7B-Novel-writing (writer用)
@@ -31,6 +32,7 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
 - 最も良かった内容の「箇条書きリスト」をコピーする
 
 ### recommended config
+- Japanese-TextGen-MoE-TEST-2x7B-NSFW_iMat_IQ4_XS 3072 0.6
 - Vecteus-v1 L33 2048 0.6
 - LightChatAssistant-TypeB-2x7B_iq4xs_imatrix L33 4096 0.6
 
@@ -52,9 +54,9 @@ editor・writerと２つの役割が存在。つまり編プロと作家が分�
   + 終章まで繰り返す。お疲れ様！
 
 ### recommended config
+- Japanese-TextGen-MoE-TEST-2x7B-NSFW_iMat_IQ4_XS 3072 0.6
 - Vecteus-v1 L33 2048 0.6
 - LightChatAssistant-TypeB-2x7B_iq4xs_imatrix L33 2048-4096 0.6
-- sniffyOther-7B-Novel-writing L33 1024-2048 0.5 (優秀だが、koboldcpp上からチャットモードで書かせた方が良いかも？ 要検証)
 
 ### writers memo
 - 文字数はぶっちゃけ目安にならんけど、5000文字以上だと「シーンをあなたの想像力を働かせて増補」が効いてくる
